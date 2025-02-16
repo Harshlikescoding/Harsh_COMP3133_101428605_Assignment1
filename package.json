@@ -1,0 +1,28 @@
+{
+  "name": "101190443_comp3133_assignment1",
+  "version": "1.0.0",
+  "description": "COMP3133 Full Stack Development Assignment 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Harsh Chaudhary - 101428605",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/mock": "^9.0.17",
+    "apollo-server": "^3.5.0",
+    "apollo-server-errors": "^3.3.0",
+    "apollo-server-express": "^3.13.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "graphql": "^15.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.13.8",
+    "nodemon": "^2.0.15"
+  }
+}

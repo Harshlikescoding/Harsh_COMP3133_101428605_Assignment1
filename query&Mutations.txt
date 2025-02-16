@@ -1,0 +1,73 @@
+mutation Mutation($loginInput: LoginInput) {
+  loginUser(loginInput: $loginInput) {
+    username
+    email
+    password
+    token
+  }
+}
+
+{
+  "loginInput": {
+    "email": "101428605@georgebrown.ca",
+    "password": "Harsh960@"
+  },
+  "employeeByIdId": null
+}
+
+{
+  "registerInput": {
+    "username": "Jane",
+    "email": "Jane.Doe@georgebrown.ca",
+    "password": 123abc
+  }
+}
+
+query ViewAllEmployees {
+  viewAllEmployees {
+    first_name
+    last_name
+    email
+    gender
+    salary
+  }
+}
+
+---------------------------------------------------------------------------
+
+mutation Mutation($employeeInput: EmployeeInput) {
+  createEmployee(employeeInput: $employeeInput) {
+    first_name
+    last_name
+    email
+    gender
+    salary
+  }
+}
+
+{
+  "employeeInput": {
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "Jane.Doe@georgebrown.ca",
+    "gender": "Female",
+    "salary": 63400
+  }
+}
+
+query ViewAllEmployees {
+  viewAllEmployees {
+    first_name
+    last_name
+    email
+    gender
+    salary
+  }
+}
+
+mutation LoginUser($loginInput: LoginInput) {
+  loginUser(loginInput: $loginInput) {
+    email,
+    password
+  }
+}
